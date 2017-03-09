@@ -117,11 +117,11 @@ class FinancialMoveModel(models.AbstractModel):
         track_visibility='onchange',
     )
     payment_mode = fields.Many2one(
-        comodel_name='payment.mode',  # FIXME:
+        comodel_name='account.payment.mode',
         track_visibility='onchange',
     )
     payment_term = fields.Many2one(
-        comodel_name='payment.term',  # FIXME:
+        comodel_name='account.payment.term',
         track_visibility='onchange',
     )
 
